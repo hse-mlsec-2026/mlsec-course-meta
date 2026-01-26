@@ -1,0 +1,33 @@
+# Normalize line endings
+* text=auto
+
+# Markdown / text files: keep LF
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+
+# Jupyter notebooks are JSON; keep as text to avoid CRLF noise
+*.ipynb text eol=lf
+
+# PDFs and binaries
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.svg text eol=lf
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+
+# Office docs (if ever added)
+*.docx binary
+*.pptx binary
+*.xlsx binary

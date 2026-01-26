@@ -1,0 +1,112 @@
+# =========================
+# OS / Editor / IDE
+# =========================
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# Python caches / build
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Jupyter / IPython
+# =========================
+.ipynb_checkpoints/
+.profile_default/
+.ipython/
+
+# =========================
+# Test / coverage / tooling
+# =========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+.cache/
+
+# =========================
+# Data / outputs (course)
+# Keep the directories, ignore contents
+# =========================
+data/*
+!data/.gitkeep
+
+**/artifacts/*
+!**/artifacts/.gitkeep
+
+**/outputs/*
+!**/outputs/.gitkeep
+
+# Common dataset extensions (do not store in git)
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.jsonl
+*.ndjson
+*.avro
+
+# Binary blobs / models (do not store in git)
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+*.ckpt
+
+# =========================
+# Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+*.key
+*.pem
+*.p12
+*.pfx
+*token*
+*secret*
+*password*
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Latex / Office temp
+# =========================
+*.aux
+*.out
+*.toc
+*.synctex.gz
+~$*.docx
+~$*.pptx
+~$*.xlsx
